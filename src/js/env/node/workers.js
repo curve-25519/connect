@@ -17,7 +17,7 @@ export const BlockbookWorker = () => {
 
 export const RippleWorker = () => {
     return new TinyWorker(() => {
-        // $FlowIssue
-        require('@trezor/blockchain-link/build/node/ripple-worker');
+        // $FlowIssue todo: node build for ripple worker seems to be broken. as a workaround require lib
+        require('@trezor/blockchain-link/lib/workers/ripple');
     });
 };

@@ -210,7 +210,6 @@ export default {
                 serializedTx: '0100000001549d2977998f899a63c0a9da30dedb2841e33fef561097b05822eccbc7f3906f010000006b483045022100eadd720201416e059d663fbb05bb9e87e56d11a6ce53f8da1ca8278d5beb07f102202b3d0318812ec2ec40d12bf36bafa5ee24b81208f08690c7ed89e47740e018cb0121023230848585885f63803a0a8aecdd6538792d5c539215c91698e315bf0253b43dffffffff02801a0600000000001976a9140223b1a09138753c9cb0baf95a0a62c82711567a88ac0065cd1d000000001976a9142db345c36563122e2fd0f5485fb7ea9bbf7cb5a288ac00000000',
             },
         },
-        // todo: 
         {
             description: '2 inputs, 255 outputs',
             customTimeout: 500000,
@@ -243,7 +242,6 @@ export default {
         {
             // See tx 1570416eb4302cf52979afd5e6909e37d8fdd874301f7cc87e547e509cb1caa6
             description: 'fee too high',
-            customTimeout: 500000,
             params: {
                 coin: 'Bitcoin',
                 inputs: [
@@ -315,7 +313,6 @@ export default {
         {
             // tx e5040e1bc1ae766v7ffb9e5248e90b2fb93cd9150234151ce90e14ab2f5933bcd
             description: 'two changes',
-            customTimeout: 500000,
             params: {
                 coin: 'Testnet',
                 inputs: [
@@ -352,7 +349,6 @@ export default {
         },
         {
             description: 'p2sh',
-            customTimeout: 500000,
             params: {
                 coin: 'Bitcoin',
                 inputs: [
@@ -376,7 +372,6 @@ export default {
         },
         {
             description: 'change on mainchain allowed',
-            customTimeout: 500000,
             params: {
                 coin: 'Testnet',
                 inputs: [

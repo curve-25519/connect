@@ -8,6 +8,7 @@ export default {
             description: "get features",
             params: {},
             result: {
+                device_id: expect.any(String),
                 vendor: 'trezor.io',
                 major_version: 2,
                 minor_version: 3,
@@ -24,7 +25,7 @@ export default {
                 pin_cached: false,
                 firmware_present: null,
                 needs_backup: false,
-                flags: 0,
+                flags: expect.any(Number),
                 model: 'T',
                 fw_major: null,
                 fw_minor: null,
@@ -57,7 +58,7 @@ export default {
                 sd_card_present: true,
                 sd_protection: false,
                 wipe_code_protection: false,
-                session_id: '4a0d361a211cb3660c87f58ffb96e18f1ea08e2be50867e900a592025f549fe8',
+                session_id: expect.any(String),
                 passphrase_always_on_device: false
             }
         },
